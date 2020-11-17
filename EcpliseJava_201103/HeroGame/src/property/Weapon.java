@@ -5,8 +5,18 @@ package property;
 
 public class Weapon extends Item{
     int damage; //攻击力
+    
+    
      
-    public static void main(String[] args) {
+    @Override
+	public boolean disposable() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+
+	public static void main(String[] args) {
         Weapon infinityEdge = new Weapon();
         infinityEdge.damage = 65; //damage属性在类Weapon中新设计的
          
